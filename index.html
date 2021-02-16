@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Mi Portafolio</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img src="images/foto.png" class="header-img" alt="Quimis Anchundia Manuel Alejandro">
+    <h1 class="header">Quimis Anchundia Manuel Alejandro </h1>
+    <h2 class="subtitle">Cuarto "B"</h2>
+    <nav>
+      <ul class="navigation">
+        <li class="nav-item">
+          <a href="#1">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a href="#2">Mis Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#3"> Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2 class="header" id="1"> Acerca de</h2>
+      <div>
+        <p class="intro">
+          ¡Hola! Mi nombre es Manuel, soy estudiante en la carrera de Tecnologia de la Información, de la Facultad
+          de Ciencias Informáticas (FACCI) en la matriz de la ULEAM. Vivo en la ciudad de Montecristi y me considero 
+          una persona un tanto serio pero a la vez divertido. Me decidí estudiar esta carrera debido a lo amplia que
+          es y a la diversidad de cosas que se pueden aprender, no ha sido algo fácil pero con esfuerzo todo se puede 
+          realizar. Hasta ahora la parte de web me ha parecido algo interesante con lo cual se pueden juntar ideas y 
+          realizar diseños web geniales, los pocos pequeños proyectos que he realizado en web me han agradado aun que aún 
+          me queda mucho por aprender y mejorar. <br> 
+          A continuacion encontraras algunos de mis proyectos y si tienes alguna duda, pregunta o quieres
+          conocer más de mi puedes contactarme en mis redes sociales o dirigiendote a la parte de contacto.
+        </p>
+        <ul class="social-media">
+          <li>
+            <a href="https://twitter.com" rel="noopener" target="_blank">
+              <img src="images/twitter.png" alt="Twitter" />
+              <p class="social-link-text">Twitter</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/" rel="noopener" target="_blank">
+              <img src="images/github-logo.png" alt="Github" />
+              <p class="social-link-text">Github</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" rel="noopener" target="_blank">
+              <img src="images/linkedin.png" alt="Linkedin" />
+              <p class="social-link-text">Linkedin</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2 class="header" id="2"> Mis Proyectos</h2>
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="backward button"></button>
+        <div class="window">
+          <ul class="project-container">
+            <li class="project1-container">
+              <button class="project1 project">
+                <img src="images/proyecto1.PNG" class="project-img" alt="Mi primer proyecto">
+              </button>
+            </li>
+
+            <li class="project2-container">
+              <button class="project2 project">
+                <img src="images/proyecto2.jpg" class="project-img" alt="Mi segundo proyecto">
+              </button>
+            </li>
+
+            <li class="project3-container">
+              <button class="project3 project">
+                <img src="images/proyecto3.jpg" class="project-img" alt="Mi tercer proyecto">
+              </button>
+            </li>
+
+            <li class="project4-container" aria-hidden="true">
+              <button class="project4 project" tabindex="-1">
+                <img src="images/proyecto4.jpg" class="project-img" alt="Mi cuarto proyecto">
+              </button>
+            </li>
+
+            <li class="project5-container" aria-hidden="true">
+              <button class="project5 project" tabindex="-1">
+                <img src="images/proyecto5.jpg" class="project-img" alt="Mi quinto proyecto">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante"></button>
+      </div>
+    </section>
+  </main>
+  <footer class="contact-section">
+    <h2 class="header" id="3">Contacto</h2>
+    <p class="intro">Puedes enviarnos tus dudas o sugerencias completando el sigueinte formulario, lo atenderemos lo antes posible.</p>
+    <form class="form-container" method="post">
+      <label class="form-label">Nombres<input type="text" aria-label="nombre" id="name" value required placeholder="Ej: Manuel Quimis" />
+        <span id="name-error" aria-live="assertive"></span> <br />
+      </label>
+      <label class="form-label">Email<input type="email" aria-label="correo" value required placeholder="Ej: quimis@gmail.com" /> <br />
+      </label>
+      <label class="message-input">Mensaje <input type="text" arialabel="mensaje" value required placeholder="" />
+        <br />
+      </label>
+      <button class="send-button">Enviar</button>
+    </form>
+  </footer>
+  <div class="notification" aria-live="assertive"></div>
+  <div class="modal-container">
+    <div class="modal">
+      <h2 class="header" id="modal-header" tabindex="0">Ejemplo de mi proyecto</h2>
+      <img src="images/proyecto1.jpg" class="modal-project-image" alt="pantallazo del proyecto" />
+      <button class="modal-button">Cerrar</button>
+    </div>
+  </div>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
